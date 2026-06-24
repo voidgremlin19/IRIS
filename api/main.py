@@ -20,14 +20,14 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from src.pipeline import Pipeline
 from src.config import CORS_ORIGINS, API_HOST, API_PORT
 
-# ─── Logging ──────────────────────────────────────────────────────
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(name)-20s | %(levelname)-7s | %(message)s",
 )
 logger = logging.getLogger("api")
 
-# ─── Global Pipeline Instance ────────────────────────────────────
+#global pipeline instance 
 pipeline: Pipeline = None
 
 
@@ -35,22 +35,21 @@ pipeline: Pipeline = None
 async def lifespan(app: FastAPI):
     """Initialize pipeline on startup."""
     global pipeline
-    logger.info("🚀 Starting Indian Road Intelligence System API...")
+    logger.info(" Starting Indian Road Intelligence System API...")
 
     # Try with real YOLO model first, fall back to mock
     try:
         pipeline = Pipeline(use_mock=False, enable_voice=True)
-        logger.info("✅ Pipeline initialized with YOLO model")
+        logger.info(" Pipeline initialized with YOLO model")
     except Exception as e:
-        logger.warning(f"⚠️ YOLO unavailable, using mock detector: {e}")
+        logger.warning(f"YOLO unavailable, using mock detector: {e}")
         pipeline = Pipeline(use_mock=True, enable_voice=True)
 
     yield
 
-    logger.info("🛑 Shutting down API...")
+    logger.info(" Shutting down API...")
 
-
-# ─── FastAPI App ──────────────────────────────────────────────────
+#fastapi application
 app = FastAPI(
     title="Indian Road Intelligence System",
     description=(
@@ -62,7 +61,7 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# ─── CORS ─────────────────────────────────────────────────────────
+#cors
 app.add_middleware(
     CORSMiddleware,
     allow_origins=CORS_ORIGINS + ["*"],
@@ -72,7 +71,6 @@ app.add_middleware(
 )
 
 
-# ─── Routes ──────────────────────────────────────────────────────
 
 
 @app.get("/health", tags=["System"])
@@ -237,7 +235,7 @@ async def get_temporal_status():
     }
 
 
-# ─── Entry Point ──────────────────────────────────────────────────
+#entry point
 if __name__ == "__main__":
     import uvicorn
 
