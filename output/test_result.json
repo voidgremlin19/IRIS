@@ -1,0 +1,778 @@
+{
+  "detections": {
+    "objects": [
+      {
+        "type": "car",
+        "raw_class": "car",
+        "class_id": 2,
+        "bbox": [
+          0.0,
+          273.6,
+          80.7,
+          341.6
+        ],
+        "bbox_normalized": {
+          "cx": 0.079,
+          "cy": 0.601,
+          "w": 0.157,
+          "h": 0.133
+        },
+        "confidence": 0.81,
+        "area_ratio": 0.0209,
+        "name": "car_1"
+      },
+      {
+        "type": "pedestrian",
+        "raw_class": "person",
+        "class_id": 0,
+        "bbox": [
+          189.5,
+          273.4,
+          233.2,
+          381.0
+        ],
+        "bbox_normalized": {
+          "cx": 0.413,
+          "cy": 0.639,
+          "w": 0.085,
+          "h": 0.21
+        },
+        "confidence": 0.767,
+        "area_ratio": 0.0179,
+        "name": "pedestrian_1"
+      },
+      {
+        "type": "pedestrian",
+        "raw_class": "person",
+        "class_id": 0,
+        "bbox": [
+          110.1,
+          274.8,
+          147.4,
+          356.3
+        ],
+        "bbox_normalized": {
+          "cx": 0.251,
+          "cy": 0.616,
+          "w": 0.073,
+          "h": 0.159
+        },
+        "confidence": 0.648,
+        "area_ratio": 0.0116,
+        "name": "pedestrian_2"
+      },
+      {
+        "type": "pedestrian",
+        "raw_class": "person",
+        "class_id": 0,
+        "bbox": [
+          73.3,
+          270.6,
+          92.2,
+          332.3
+        ],
+        "bbox_normalized": {
+          "cx": 0.162,
+          "cy": 0.589,
+          "w": 0.037,
+          "h": 0.121
+        },
+        "confidence": 0.554,
+        "area_ratio": 0.0045,
+        "name": "pedestrian_3"
+      },
+      {
+        "type": "pedestrian",
+        "raw_class": "person",
+        "class_id": 0,
+        "bbox": [
+          176.8,
+          272.4,
+          198.9,
+          343.6
+        ],
+        "bbox_normalized": {
+          "cx": 0.367,
+          "cy": 0.602,
+          "w": 0.043,
+          "h": 0.139
+        },
+        "confidence": 0.488,
+        "area_ratio": 0.006,
+        "name": "pedestrian_4"
+      },
+      {
+        "type": "traffic light",
+        "raw_class": "traffic light",
+        "class_id": 9,
+        "bbox": [
+          201.1,
+          94.0,
+          220.4,
+          125.2
+        ],
+        "bbox_normalized": {
+          "cx": 0.412,
+          "cy": 0.214,
+          "w": 0.038,
+          "h": 0.061
+        },
+        "confidence": 0.486,
+        "area_ratio": 0.0023,
+        "name": "traffic light_1"
+      },
+      {
+        "type": "car",
+        "raw_class": "car",
+        "class_id": 2,
+        "bbox": [
+          150.8,
+          262.1,
+          208.6,
+          339.6
+        ],
+        "bbox_normalized": {
+          "cx": 0.351,
+          "cy": 0.588,
+          "w": 0.113,
+          "h": 0.151
+        },
+        "confidence": 0.42,
+        "area_ratio": 0.0171,
+        "name": "car_2"
+      },
+      {
+        "type": "car",
+        "raw_class": "car",
+        "class_id": 2,
+        "bbox": [
+          99.2,
+          264.9,
+          153.6,
+          338.6
+        ],
+        "bbox_normalized": {
+          "cx": 0.247,
+          "cy": 0.589,
+          "w": 0.106,
+          "h": 0.144
+        },
+        "confidence": 0.413,
+        "area_ratio": 0.0153,
+        "name": "car_3"
+      }
+    ],
+    "count": 8,
+    "image_size": {
+      "width": 512,
+      "height": 512
+    }
+  },
+  "scene_graph": {
+    "relations": [
+      {
+        "subject": "car_1",
+        "relation": "left_of",
+        "object": "pedestrian_1",
+        "distance": 0.336
+      },
+      {
+        "subject": "car_1",
+        "relation": "left_of",
+        "object": "pedestrian_2",
+        "distance": 0.173
+      },
+      {
+        "subject": "car_1",
+        "relation": "left_of",
+        "object": "pedestrian_3",
+        "distance": 0.084
+      },
+      {
+        "subject": "car_1",
+        "relation": "near",
+        "object": "pedestrian_3",
+        "distance": 0.084
+      },
+      {
+        "subject": "car_1",
+        "relation": "left_of",
+        "object": "pedestrian_4",
+        "distance": 0.288
+      },
+      {
+        "subject": "car_1",
+        "relation": "behind",
+        "object": "traffic light_1",
+        "distance": 0.511
+      },
+      {
+        "subject": "car_1",
+        "relation": "left_of",
+        "object": "car_2",
+        "distance": 0.272
+      },
+      {
+        "subject": "car_1",
+        "relation": "left_of",
+        "object": "car_3",
+        "distance": 0.168
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "right_of",
+        "object": "pedestrian_2",
+        "distance": 0.164
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "right_of",
+        "object": "pedestrian_3",
+        "distance": 0.256
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "aligned_with",
+        "object": "pedestrian_4",
+        "distance": 0.059
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "near",
+        "object": "pedestrian_4",
+        "distance": 0.059
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "behind",
+        "object": "traffic light_1",
+        "distance": 0.425
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "right_of",
+        "object": "car_2",
+        "distance": 0.08
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "near",
+        "object": "car_2",
+        "distance": 0.08
+      },
+      {
+        "subject": "pedestrian_1",
+        "relation": "right_of",
+        "object": "car_3",
+        "distance": 0.173
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "right_of",
+        "object": "pedestrian_3",
+        "distance": 0.093
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "near",
+        "object": "pedestrian_3",
+        "distance": 0.093
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "left_of",
+        "object": "pedestrian_4",
+        "distance": 0.117
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "near",
+        "object": "pedestrian_4",
+        "distance": 0.117
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "behind",
+        "object": "traffic light_1",
+        "distance": 0.433
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "left_of",
+        "object": "car_2",
+        "distance": 0.104
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "near",
+        "object": "car_2",
+        "distance": 0.104
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "aligned_with",
+        "object": "car_3",
+        "distance": 0.027
+      },
+      {
+        "subject": "pedestrian_2",
+        "relation": "near",
+        "object": "car_3",
+        "distance": 0.027
+      },
+      {
+        "subject": "pedestrian_3",
+        "relation": "left_of",
+        "object": "pedestrian_4",
+        "distance": 0.205
+      },
+      {
+        "subject": "pedestrian_3",
+        "relation": "behind",
+        "object": "traffic light_1",
+        "distance": 0.451
+      },
+      {
+        "subject": "pedestrian_3",
+        "relation": "left_of",
+        "object": "car_2",
+        "distance": 0.189
+      },
+      {
+        "subject": "pedestrian_3",
+        "relation": "left_of",
+        "object": "car_3",
+        "distance": 0.085
+      },
+      {
+        "subject": "pedestrian_3",
+        "relation": "near",
+        "object": "car_3",
+        "distance": 0.085
+      },
+      {
+        "subject": "pedestrian_4",
+        "relation": "behind",
+        "object": "traffic light_1",
+        "distance": 0.391
+      },
+      {
+        "subject": "pedestrian_4",
+        "relation": "aligned_with",
+        "object": "car_2",
+        "distance": 0.021
+      },
+      {
+        "subject": "pedestrian_4",
+        "relation": "near",
+        "object": "car_2",
+        "distance": 0.021
+      },
+      {
+        "subject": "pedestrian_4",
+        "relation": "right_of",
+        "object": "car_3",
+        "distance": 0.121
+      },
+      {
+        "subject": "pedestrian_4",
+        "relation": "near",
+        "object": "car_3",
+        "distance": 0.121
+      },
+      {
+        "subject": "traffic light_1",
+        "relation": "ahead_of",
+        "object": "car_2",
+        "distance": 0.379
+      },
+      {
+        "subject": "traffic light_1",
+        "relation": "ahead_of",
+        "object": "car_3",
+        "distance": 0.41
+      },
+      {
+        "subject": "car_2",
+        "relation": "right_of",
+        "object": "car_3",
+        "distance": 0.104
+      },
+      {
+        "subject": "car_2",
+        "relation": "near",
+        "object": "car_3",
+        "distance": 0.104
+      }
+    ],
+    "zones": {
+      "left": [
+        {
+          "type": "car",
+          "name": "car_1",
+          "confidence": 0.81,
+          "position": {
+            "cx": 0.079,
+            "cy": 0.601
+          }
+        },
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_2",
+          "confidence": 0.648,
+          "position": {
+            "cx": 0.251,
+            "cy": 0.616
+          }
+        },
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_3",
+          "confidence": 0.554,
+          "position": {
+            "cx": 0.162,
+            "cy": 0.589
+          }
+        },
+        {
+          "type": "car",
+          "name": "car_3",
+          "confidence": 0.413,
+          "position": {
+            "cx": 0.247,
+            "cy": 0.589
+          }
+        }
+      ],
+      "center": [
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_1",
+          "confidence": 0.767,
+          "position": {
+            "cx": 0.413,
+            "cy": 0.639
+          }
+        },
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_4",
+          "confidence": 0.488,
+          "position": {
+            "cx": 0.367,
+            "cy": 0.602
+          }
+        },
+        {
+          "type": "traffic light",
+          "name": "traffic light_1",
+          "confidence": 0.486,
+          "position": {
+            "cx": 0.412,
+            "cy": 0.214
+          }
+        },
+        {
+          "type": "car",
+          "name": "car_2",
+          "confidence": 0.42,
+          "position": {
+            "cx": 0.351,
+            "cy": 0.588
+          }
+        }
+      ],
+      "right": []
+    },
+    "ego_view": {
+      "ahead": [
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_1",
+          "confidence": 0.767,
+          "size_indicator": "small"
+        },
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_4",
+          "confidence": 0.488,
+          "size_indicator": "small"
+        },
+        {
+          "type": "traffic light",
+          "name": "traffic light_1",
+          "confidence": 0.486,
+          "size_indicator": "small"
+        },
+        {
+          "type": "car",
+          "name": "car_2",
+          "confidence": 0.42,
+          "size_indicator": "small"
+        }
+      ],
+      "left_side": [
+        {
+          "type": "car",
+          "name": "car_1",
+          "confidence": 0.81,
+          "size_indicator": "medium"
+        },
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_2",
+          "confidence": 0.648,
+          "size_indicator": "small"
+        },
+        {
+          "type": "pedestrian",
+          "name": "pedestrian_3",
+          "confidence": 0.554,
+          "size_indicator": "small"
+        },
+        {
+          "type": "car",
+          "name": "car_3",
+          "confidence": 0.413,
+          "size_indicator": "small"
+        }
+      ],
+      "right_side": [],
+      "close": [],
+      "far": [
+        {
+          "type": "traffic light",
+          "name": "traffic light_1",
+          "confidence": 0.486,
+          "size_indicator": "small"
+        }
+      ]
+    },
+    "clusters": [
+      {
+        "members": [
+          "car_1",
+          "pedestrian_2",
+          "pedestrian_3",
+          "pedestrian_4",
+          "car_2",
+          "car_3"
+        ],
+        "size": 6,
+        "type": "congestion"
+      }
+    ],
+    "object_count": 8
+  },
+  "distances": {
+    "distances": [
+      {
+        "type": "car",
+        "estimated_meters": 9.71,
+        "lane": "left",
+        "zone": "near",
+        "urgency": "high",
+        "confidence": 0.32,
+        "method": "perspective",
+        "bbox": [
+          0.0,
+          273.6,
+          80.7,
+          341.6
+        ]
+      },
+      {
+        "type": "pedestrian",
+        "estimated_meters": 7.17,
+        "lane": "ego",
+        "zone": "near",
+        "urgency": "high",
+        "confidence": 0.48,
+        "method": "perspective",
+        "bbox": [
+          189.5,
+          273.4,
+          233.2,
+          381.0
+        ]
+      },
+      {
+        "type": "pedestrian",
+        "estimated_meters": 8.58,
+        "lane": "left",
+        "zone": "near",
+        "urgency": "high",
+        "confidence": 0.31,
+        "method": "perspective",
+        "bbox": [
+          110.1,
+          274.8,
+          147.4,
+          356.3
+        ]
+      },
+      {
+        "type": "pedestrian",
+        "estimated_meters": 10.6,
+        "lane": "left",
+        "zone": "medium",
+        "urgency": "moderate",
+        "confidence": 0.2,
+        "method": "perspective",
+        "bbox": [
+          73.3,
+          270.6,
+          92.2,
+          332.3
+        ]
+      },
+      {
+        "type": "pedestrian",
+        "estimated_meters": 9.54,
+        "lane": "ego",
+        "zone": "near",
+        "urgency": "high",
+        "confidence": 0.2,
+        "method": "perspective",
+        "bbox": [
+          176.8,
+          272.4,
+          198.9,
+          343.6
+        ]
+      },
+      {
+        "type": "traffic light",
+        "estimated_meters": 38.46,
+        "lane": "ego",
+        "zone": "far",
+        "urgency": "low",
+        "confidence": 0.09,
+        "method": "bbox_ratio",
+        "bbox": [
+          201.1,
+          94.0,
+          220.4,
+          125.2
+        ]
+      },
+      {
+        "type": "car",
+        "estimated_meters": 7.91,
+        "lane": "ego",
+        "zone": "near",
+        "urgency": "high",
+        "confidence": 0.19,
+        "method": "perspective",
+        "bbox": [
+          150.8,
+          262.1,
+          208.6,
+          339.6
+        ]
+      },
+      {
+        "type": "car",
+        "estimated_meters": 7.99,
+        "lane": "left",
+        "zone": "near",
+        "urgency": "high",
+        "confidence": 0.18,
+        "method": "perspective",
+        "bbox": [
+          99.2,
+          264.9,
+          153.6,
+          338.6
+        ]
+      }
+    ],
+    "threat_report": {
+      "primary_threat": {
+        "type": "pedestrian",
+        "distance_m": 7.17,
+        "lane": "ego",
+        "risk_level": "CRITICAL",
+        "risk_score": 453.28
+      },
+      "secondary_threat": {
+        "type": "pedestrian",
+        "distance_m": 9.54,
+        "lane": "ego",
+        "risk_level": "CRITICAL"
+      },
+      "recommended_action": "Brake immediately. Pedestrian in your path at 7.17m."
+    },
+    "summary": {
+      "near_objects": 6,
+      "medium_objects": 1,
+      "far_objects": 1,
+      "total_objects": 8,
+      "closest_object": {
+        "type": "pedestrian",
+        "estimated_meters": 7.17,
+        "lane": "ego",
+        "zone": "near",
+        "urgency": "high",
+        "confidence": 0.48,
+        "method": "perspective",
+        "bbox": [
+          189.5,
+          273.4,
+          233.2,
+          381.0
+        ]
+      }
+    }
+  },
+  "reasoning": {
+    "context": "Vulnerable road users nearby: pedestrian. Traffic congestion detected with 6 objects clustered. 6 objects in close proximity",
+    "decision": "extreme_caution",
+    "risk": "critical",
+    "risk_score": 10,
+    "alert": "Caution! Pedestrian at approximately 7 meters.",
+    "all_alerts": [
+      "Caution! Pedestrian at approximately 7 meters.",
+      "Traffic congestion ahead. Reduce speed.",
+      "Multiple objects very close. Drive with extreme caution."
+    ],
+    "reasoning_method": "rule_based",
+    "object_summary": {
+      "car": 3,
+      "pedestrian": 4,
+      "traffic light": 1
+    },
+    "scene_complexity": "very_high"
+  },
+  "voice_alert": {
+    "text": "Caution! Pedestrian at approximately 7 meters.",
+    "audio_base64": "<base64_audio_omitted>",
+    "format": "mp3",
+    "engine": "gtts"
+  },
+  "temporal": {
+    "warning": "PERSISTENT WARNING: Extreme Caution! Risk level: critical. Consistent across 1 frames over 0.0s.",
+    "decision": "extreme_caution",
+    "risk": "critical",
+    "confidence": 1.0,
+    "frame_count": 1,
+    "window_seconds": 0.0,
+    "primary_alert": "Caution! Pedestrian at approximately 7 meters.",
+    "all_alerts": [
+      "Caution! Pedestrian at approximately 7 meters."
+    ],
+    "detected_objects": {
+      "car": 3,
+      "pedestrian": 4,
+      "traffic light": 1
+    }
+  },
+  "performance": {
+    "total_seconds": 1.554,
+    "detection_seconds": 0.057,
+    "graph_seconds": 0.0,
+    "distance_seconds": 0.0,
+    "reasoning_seconds": 0.0
+  },
+  "timestamp": 1780576098.520455
+}
