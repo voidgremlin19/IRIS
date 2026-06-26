@@ -1,4 +1,4 @@
-# 🚗🇮🇳 Indian Road Intelligence System (IRIS)
+# Indian Road Intelligence System (IRIS)
 > **“From Perception to Explanable Reasoning — An AI Driving Brain for Complex, Non-Lane-Disciplined Environments.”**
 
 [![API License](https://img.shields.io/badge/License-Proprietary-blue.svg)](#)
@@ -12,7 +12,7 @@
 
 Traditional Advanced Driver Assistance Systems (ADAS) and Autonomous Vehicle (AV) perception stacks are designed for highly structured, lane-disciplined driving environments typical of Western highways. When deployed in emerging markets—particularly India—these systems frequently fail or experience alarm fatigue. 
 
-The **Indian Road Intelligence System (IRIS)** is a proprietary, explainable AI (XAI) copilot and driver assistance brain specifically engineered to handle the unique, non-structured traffic dynamics of Indian urban and rural roadways.
+The **Indian Road Intelligence System (IRIS)** is a proprietary, explainable **AI (XAI) copilot and driver assistance brain** specifically engineered to handle the unique, non-structured traffic dynamics of Indian urban and rural roadways.
 
 ### The Market Opportunity
 * **Unstructured Mixed Traffic**: Roads shared by heavy commercial vehicles, high-speed passenger cars, vulnerable auto-rickshaws, pedestrians, and domestic animals (cows, stray dogs, elephants).
