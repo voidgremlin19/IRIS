@@ -1,4 +1,4 @@
-#  Indian Road Intelligence System (IRIS)
+# 🚗🇮🇳 Indian Road Intelligence System (IRIS)
 > **“From Perception to Explanable Reasoning — An AI Driving Brain for Complex, Non-Lane-Disciplined Environments.”**
 
 [![API License](https://img.shields.io/badge/License-Proprietary-blue.svg)](#)
@@ -8,7 +8,7 @@
 
 ---
 
-##  Executive Summary & Commercial Value Proposition
+## 📅 Executive Summary & Commercial Value Proposition
 
 Traditional Advanced Driver Assistance Systems (ADAS) and Autonomous Vehicle (AV) perception stacks are designed for highly structured, lane-disciplined driving environments typical of Western highways. When deployed in emerging markets—particularly India—these systems frequently fail or experience alarm fatigue. 
 
@@ -20,14 +20,14 @@ The **Indian Road Intelligence System (IRIS)** is a proprietary, explainable AI 
 * **Economic Impact**: Over 150,000 traffic fatalities occur annually in India, with logistics and insurance providers bearing over $20B in losses. IRIS offers an integratable API and dashboard to mitigate these risks.
 
 ### Key Commercial Features
-*  **Hybrid Reasoning Stack**: Combines deterministic offline rule-based heuristics with cloud-based Vision-Language Models (VLM) for zero-latency fail-safe operation and complex contextual reasoning.
-*  **Perspective-Aware Threat Intelligence**: Uses geometric homography and ground-projection equations to calculate real-world object distances from a single monocular dashcam stream without requiring expensive LiDAR hardware.
-*  **Natural Language Safety Explanations**: Generates real-time, low-latency Voice Alerts explaining *why* a decision was made (e.g., *"Warning: Pedestrian detected 8 meters ahead in your path. Slow down immediately."*).
-*  **Temporal Decision Smoothing**: A sliding-window temporal consensus engine filters transient sensor noise and prevents sudden, jittery warnings that lead to driver fatigue.
+* 🧠 **Hybrid Reasoning Stack**: Combines deterministic offline rule-based heuristics with cloud-based Vision-Language Models (VLM) for zero-latency fail-safe operation and complex contextual reasoning.
+* 📏 **Perspective-Aware Threat Intelligence**: Uses geometric homography and ground-projection equations to calculate real-world object distances from a single monocular dashcam stream without requiring expensive LiDAR hardware.
+* 🗣️ **Natural Language Safety Explanations**: Generates real-time, low-latency Voice Alerts explaining *why* a decision was made (e.g., *"Warning: Pedestrian detected 8 meters ahead in your path. Slow down immediately."*).
+* 📈 **Temporal Decision Smoothing**: A sliding-window temporal consensus engine filters transient sensor noise and prevents sudden, jittery warnings that lead to driver fatigue.
 
 ---
 
-##  System Architecture & Workflow
+## 🏗️ System Architecture & Workflow
 
 IRIS processes video frames sequentially through a highly modular, decoupled pipeline:
 
@@ -52,7 +52,7 @@ graph TD
 
 ---
 
-##  Scientific & Theoretical Framework
+## 🔬 Scientific & Theoretical Framework
 
 ### 1. Monocular Perspective-Aware Distance Estimation
 IRIS estimates the physical distance $d$ to detected objects using a geometric model that maps image-space coordinate changes to 3D world coordinates. The system dynamically alternates between two methods based on the object's relationship to the horizon:
@@ -129,7 +129,7 @@ IRIS implements a hybrid safety-critical reasoning stack:
 
 
 
-##  Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 * Python 3.9+
@@ -171,7 +171,7 @@ IRIS implements a hybrid safety-critical reasoning stack:
 
 ---
 
-##  Running the Application
+## 💻 Running the Application
 
 ### 1. Unified Development Launch (Recommended)
 You can launch both the frontend and backend simultaneously:
@@ -199,7 +199,7 @@ docker-compose up --build
 
 ---
 
-##  API Documentation
+## 🔌 API Documentation
 
 ### `POST /analyze`
 Analyzes a road scene image and outputs a complete visual-spatial representation, threat levels, and reasoning decisions.
@@ -260,7 +260,7 @@ High-speed endpoint returning only the driving decision and voice warnings, opti
 
 ---
 
-##  iOS Integration & Client Setup Guide
+## 📱 iOS Integration & Client Setup Guide
 
 This section explains how to use an iOS device (e.g., iPhone mounted as a dashcam) as a hardware peripheral that streams camera frames to the IRIS server and plays voice alerts in real-time.
 
